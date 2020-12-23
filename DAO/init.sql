@@ -2,8 +2,8 @@
 
 CREATE TABLE `customers` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(30) CHARACTER SET gb2312 DEFAULT NULL,
-  `email` varchar(20) CHARACTER SET gb2312 DEFAULT NULL,
+  `name` varchar(30) CHARACTER SET utf8mb4 DEFAULT NULL,
+  `email` varchar(20) CHARACTER SET utf8mb4 DEFAULT NULL,
   `birth` date DEFAULT NULL,
   `photo` mediumblob,
   PRIMARY KEY (`id`)
