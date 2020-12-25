@@ -45,7 +45,7 @@ public abstract class BaseDao<T> {
         PreparedStatement pStatement = null;
 
         try {
-            pStatement = connection.prepareCall(sql);
+            pStatement = connection.prepareStatement(sql);
 
             for (int i = 0; i < args.length; ++i) {
                 pStatement.setObject(i + 1, args[i]);
